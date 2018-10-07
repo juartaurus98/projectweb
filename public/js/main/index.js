@@ -15,7 +15,7 @@ function Login() {
 }
 
 function Registrate(){
-    var new
+  
 }
 jQuery(function ($) {
 
