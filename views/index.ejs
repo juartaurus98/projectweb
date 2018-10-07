@@ -3,8 +3,13 @@
 	<title>Hệ thống quản lý cựu sinh viên</title>
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-	<script src="assets/js/main/index.js"></script>
+    
+    
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/main/index.js"></script>
 	<script type="text/javascript"></script>
 </head>
 <body>
@@ -13,10 +18,11 @@
     <h3 class="text-center login-text">Đăng nhập</h3>
     <form class="text-center">
         <div class="form-group">
-            <input class="input-lg " type="text" name="username" placeholder="Tên tài khoản">
+            <input class="input-lg "id="username" type="text" name="username" placeholder="Tên tài khoản">
         </div>
         <div class="form-group">
-            <input class="input-lg" type="password" name="password" placeholder="Mật khẩu">
+            <input class="input-lg" id="password" type="password" name="password" placeholder="Mật khẩu">
+            <p class="text-center" id="error-pass"></p>
         </div>
         <div class="form-check">
         	<label  class="form-check-label remember-password">
@@ -25,7 +31,9 @@
         </div>
         <div class="login-button">
         	<input type="button" name="login" id="login" value="Đăng nhập" onclick="javascript:Login()";>
+
         </div>
+
         <div>
         	<a href="registered" class="registrate">Chưa có tài khoản? Đăng ký ngay</a>
         </div>
