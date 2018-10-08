@@ -1,77 +1,75 @@
-body, html {
+body, html, .container, .main {
 	width: 100%;
 	height: 100%;
-}
-.row {
-	margin: 0;
+	font-size: 14px;
 }
 .side-bar {
-	float: left;
 	background-color: #43425d;
-	color: #9f9f9f;
 	height: 100%;
-	padding: 0  0  0 0px;
 }
-nav {
-	height: 50px;
-	padding: 10px 15px; 
-}
-.nav {
-	max-height: 32px;
-}
-.home {
-	padding: 10px;
-	height: 50px;
-}
-.home a {
-	color: white;
-}
-.home a:hover{
-	color: #8c8c8c;
+.side-bar a {
 	text-decoration: none;
+	color: white;
+	text-align: center;
 }
-.content {
-	background-color: #e1e9ec;
-	padding:50px 30px;
+.side-bar a:hover {
+	color: #8c8c8c;
 }
-.main {
-	padding:0;
-	height: 100%;
+.side-bar a h2 {
+	margin: 0;
+	padding: 10px 0;
+	height: 70px;
 }
-ul {
+.side-bar ul {
 	list-style: none;
+	color: white;
+	margin: 0;
 	padding: 0;
 }
-ul li {
-	padding: 15px 0 15px 20px;
-	text-align: justify;
+.side-bar ul li {
+	padding: 15px;
+	cursor: pointer;
 }
-ul li:hover {
+.side-bar ul li:hover {
+	color: #8c8c8c;
+}
+.side-bar ul li#tintuc{
 	background-color: #3c3b54;
 	border-left: 3px solid #6f6da7;
 }
-input {
-	border: none;
+.nav {
+	height: 70px;
+	padding: 15px 10px;
+}
+.nav-content {
+	height: 100%;
+}
+.timkiem, .thongbao{
+	height: 40px;
+	padding: 8px;
+}
+.thongbao {
 	color: #8c8c8c;
-	width: 100%;
+	font-size: 1.3rem;
+	text-align: center;
+	border-left:1px solid;
+	border-right:1px solid;
 }
-.tuongtac {
-	color: #8c8c8c;
-	border-left: 1px solid #8c8c8c;
-	border-right: 1px solid #8c8c8c;
-	padding: 7px;
-	text-align: center;	
+.chuong:hover, .tinnhan :hover {
+	color: #404040;
 }
-.username {
-	max-height: 100%;
+.name-home {
+	padding: 10px;
+	text-align: right;
 }
-.username img{
-	width: 75%;
-}
-.username span{
-	font-size: 12px;
+.avata-home img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
 }
 .content {
-	color: #427ead;
-	font-family: Bookman, Times New Roman, Arial;
+	background-color: #e1e9ec;
+	padding: 50px;
+	color: #008EFD;
+	height: 100%;
 }

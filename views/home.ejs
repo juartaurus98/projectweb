@@ -2,63 +2,76 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="assets/css/home.css">
-    
-
 </head>
 
 <body>
-    <div class="row h-100">
-        <div class="side-bar col-sm-3 col-md-2">
-            <div class="home">
-                <a href="/home"><h3>UET - VNU</h3></a>
-            </div>
+    <div class="container w3-row">
+        <div class="side-bar w3-col m3 l2">
+            <a href="/home">
+                <h2>UET - VNU</h2>
+            </a>
             <ul>
-                <li><i class="fa fa-chart-bar"></i> Tin tức cựu sinh viên</li>
-                <li><i class="fa fa-file"></i> Báo cáo về cựu sinh viên</li>
-                <li><i class="fa fa-question-circle"></i> Trung tâm trợ giúp</li>
-                <li><i class="fa fa-cog"></i> Cài đặt chính sách</li>
+                <li id="tintuc" onclick="javascript:tabTinTuc()">
+                    <i class="fa fa-chart-bar"></i> Tin tức cựu sinh viên
+                </li>
+                <li id="baocao" onclick="javascript:tabBaoCao()">
+                    <i class="fa fa-file"></i> Báo cáo về cựu sinh viên
+                </li>
+                <li id="trogiup" onclick="javascript:tabTroGiup()">
+                    <i class="fa fa-life-ring"></i> Trung tâm trợ giúp
+                </li>
+                <li id="caidat" onclick="javascript:tabCaiDat()">
+                    <i class="fa fa-cog"></i> Cài đặt chính sách
+                </li>
             </ul>
         </div>
-        <div class="main col-sm-9 col-md-10">
-            <nav>
-                <div class="row nav">
-                    <div class="col-4 col-md-8">
+        <div class="main w3-col m9 l10">
+            <div class="nav w3-bar w3-card row">
+                <div class="nav-content">
+                    <div class="timkiem w3-col s4 l7">
                         <form>
-                            <input type="text" name="" placeholder="Tìm kiếm thông tin diễn đàn trợ giúp">
+                            <input type="text" placeholder="Tìm kiếm thông tin diễn đàn trợ giúp" name="" class="w3-border-0" style="width: 100%">
                         </form>
                     </div>
-                    <div class="col-4 col-md-2 tuongtac">
-                        <div class="row">
-                            <div class="col-6 fa fa-bell p-0"></div>
-                            <div class="col-6 fa fa-comment p-0"></div>
+                    <div class="thongbao w3-col s4 l2">
+                        <div class="chuong w3-col s6">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="tinnhan w3-col s6">
+                            <i class="fa fa-comments"></i>
                         </div>
                     </div>
-                    <div class="col-4 col-md-2 p-0 username">
-                        <div class="row">
-                            <div class="col-8 p-0 text-right"><span>Thằng lồn mập địt</span></div>
-                            <div class="col-4 pl-2"><img src="" alt="avata" class="img-fluid rounded-circle"></div>
+                    <div class="username w3-col s4 l3">
+                        <div class="username-content w3-row">
+                            <div class="name-home w3-col s9">Thằng lồn mập địt</div>
+                            <div class="avata-home w3-col s3">
+                                <img src="" alt="logo" class="w3-image w3-circel">
                             </div>
                         </div>
                     </div>
-            </nav>
-            <div class="content h-100">
-                content
+                </div>
+            </div>
+            <div class="content" id="tintuc-content">
+                Tin tức
+            </div>
+            <div class="content" id="baocao-content" style="display: none;">
+                Báo cáo
+            </div>
+            <div class="content" id="trogiup-content" style="display: none;">
+                Trợ giúp
+            </div>
+            <div class="content" id="caidat-content" style="display: none;">
+                Cài đặt
             </div>
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="assets/js/main/home.js"></script>
 </body>
 
 </html>
