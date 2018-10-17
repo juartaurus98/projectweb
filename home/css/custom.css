@@ -28,3 +28,6 @@ form {
 .carousel-item img{
     height: 400px;
 }
+.form-control{
+    margin-top:12px;
+}
